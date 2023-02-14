@@ -1,0 +1,16 @@
+/* Exception Styling */
+.notif[data-state="unread"] {
+  background-color: var(--clr-neutral-150);
+  box-shadow: 0 1px 1px 1px hsla(210, 9%, 47%, 0.075);
+
+  .notif__title::after {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--clr-primary-400);
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+    transform: translateY(0);
+  }
+}

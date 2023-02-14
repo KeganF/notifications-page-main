@@ -1,0 +1,84 @@
+/* Block Styling */
+main {
+  box-shadow: 0 5px 18px 2px hsla(209, 13%, 46%, 0.075);
+  transition: border-radius 200ms ease;
+
+  @media (min-width: 730px) {
+    font-size: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+}
+
+header {
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  /* prevents the red notification circle from
+  displaying over top of sticky element */
+  z-index: 1;
+  transition: padding 200ms ease;
+
+  @media (min-width: 730px) {
+    padding: 2rem;
+  }
+}
+
+.badge {
+  font-size: calc(14px + 0.390625vw);
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notif {
+  display: flex;
+  gap: 0.75rem;
+
+  .avatar,
+  .photo-preview {
+    width: 2.5em;
+    height: 2.5em;
+  }
+
+  .photo-preview {
+    aspect-ratio: 1;
+  }
+
+  .notif__content {
+    flex-grow: 1;
+    display: grid;
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  transition: color 100ms ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--clr-neutral-800);
+}
+
+/* The notif[data-state="unread"] in the _exception file
+is almost the exact same as this. This is here to add a 
+transition between the read and unread states */
+.notif {
+  transition: background-color 200ms ease;
+
+  .notif__title::after {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+    transform: translateY(-10px);
+    transition: background-color 150ms ease, transform 200ms ease;
+  }
+}

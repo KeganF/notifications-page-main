@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body onload="countNotifs()">
+  <main class="bg-100">
+    <h1 class="visually-hidden">Notifications Page</h1>
+    <header class="bg-100 flex-group">
+      <div class="flex-group">
+        <h2 class="fw-800">Notifications</h2>
+        <span class="badge | fw-800 clr-100 bg-p-600 br-4" id="notif-count"></span>
+      </div>
+      <button class="button | clr-400" onclick="markAllAsRead()">Mark all as read</button>
+    </header>
+    <div class="mlr-variable">
+      <ul class="unformatted-list flow">
+        <li class="notif | br-4 pad-16 clr-400" data-state="unread">
+          <img class="avatar" src="assets/images/avatar-mark-webber.webp" alt="">
+          <div class="notif__content">
+            <p class="notif__title"><a href="#" class="fw-800 clr-800">Mark Webber</a> reacted to your recent post <a href="#" class="fw-800 clr-400">My first tournament today!</a></p>
+            <p class="clr-300">1m ago</p>
+          </div>
+        </li>
+        <li class="notif | br-4 pad-16 clr-400" data-state="unread">
+          <img class="avatar" src="assets/images/avatar-angela-gray.webp" alt="">
+          <div class="notif__content">
+            <p class="notif__title"><a href="#" class="fw-800 clr-800">Angela Gray</a> followed you</p>
+            <p class="clr-300">5m ago</p>
+          </div>
+        </li>
+        <li class="notif | br-4 pad-16 clr-400" data-state="unread">
+          <img class="avatar" src="assets/images/avatar-jacob-thompson.webp" alt="">
+          <div class="notif__content">
+            <p class="notif__title"><a href="#" class="fw-800 clr-800">Jacob Thompson</a> has joined your group <a class="fw-800 clr-p-600" href="#">Chess Club</a></p>
+            <p class="clr-300">1 day ago</p>
+          </div>
+        </li>
+        <li class="notif | br-4 pad-16 clr-400" data-state="read">
+          <img class="avatar" src="assets/images/avatar-rizky-hasanuddin.webp" alt="">
+          <div class="notif__content">
+            <p class="notif__title"><a href="#" class="fw-800 clr-800">Rizky Hasanuddin</a> sent you a private message</p>
+            <p class="clr-300">5 days ago</p>
+            <p class="bg-100 b-1-300 br-4 mt-8 pad-18">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+          </div>
+        </li>
+        <li class="notif | br-4 pad-16 clr-400" data-state="read">
+          <img class="avatar" src="assets/images/avatar-kimberly-smith.webp" alt="">
+          <div class="notif__content">
+            <p class="notif__title"><a href="#" class="fw-800 clr-800">Kimberly Smith</a> commented on your picture</p>
+            <p class="clr-300">1 week ago</p>
+          </div>
+          <a href="#" class="photo-preview"><img src="assets/images/image-chess.webp" alt=""></a>
+        </li>
+        <li class="notif | br-4 pad-16 clr-400" data-state="read">
+          <img class="avatar" src="assets/images/avatar-nathan-peterson.webp" alt="">
+          <div class="notif__content">
+            <p class="notif__title"><a href="#" class="fw-800 clr-800">Nathan Peterson</a> reacted to your recent post <a href="#" class="fw-800 clr-400">5 end-game strategies to increase your win rate</a></p>
+            <p class="clr-300">2 weeks ago</p>
+          </div>
+        </li>
+        <li class="notif | br-4 pad-16 clr-400" data-state="read">
+          <img class="avatar" src="assets/images/avatar-anna-kim.webp" alt="">
+          <div class="notif__content">
+            <p class="notif__title"><a href="#" class="fw-800 clr-800">Anna Kim</a> left the group <a class="fw-800 clr-p-600" href="#">Chess Club</a></p>
+            <p class="clr-300">2 weeks ago</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/KeganF">KeganF</a>.
+  </div> -->
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* Base and Global Styling */
+:root {
+  --clr-primary-400: hsl(1, 90%, 64%);
+  --clr-primary-600: hsl(219, 85%, 26%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-150: hsl(210, 60%, 98%);
+  --clr-neutral-200: hsl(211, 68%, 94%);
+  --clr-neutral-250: hsl(205, 33%, 90%);
+  --clr-neutral-300: hsl(219, 14%, 63%);
+  --clr-neutral-400: hsl(219, 12%, 42%);
+  --clr-neutral-800: hsl(224, 21%, 14%);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: calc(13px + 0.390625vw);
+  background-color: var(--clr-neutral-150);
+  display: grid;
+  place-items: center;
+}
+
+h2 {
+  font-size: calc(18px + 0.390625vw);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}

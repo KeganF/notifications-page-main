@@ -1,0 +1,11 @@
+/* Composition */
+main {
+  display: grid;
+  max-width: 730px;
+
+  @media (min-width: 730px) {
+    .mlr-variable {
+      --margin: 2rem;
+    }
+  }
+}

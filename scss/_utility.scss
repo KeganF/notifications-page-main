@@ -1,0 +1,85 @@
+/* Utilities */
+.fw-800 {
+  font-weight: 800;
+}
+
+.clr-p-600 {
+  color: var(--clr-primary-600);
+}
+
+.clr-100 {
+  color: var(--clr-neutral-100);
+}
+
+.clr-300 {
+  color: var(--clr-neutral-300);
+}
+
+.clr-400 {
+  color: var(--clr-neutral-400);
+}
+
+.clr-800 {
+  color: var(--clr-neutral-800);
+}
+
+.bg-p-600 {
+  background-color: var(--clr-primary-600);
+}
+
+.bg-100 {
+  background-color: var(--clr-neutral-100);
+}
+
+.b-1-300 {
+  border: 1px solid var(--clr-neutral-300);
+}
+
+.br-4 {
+  border-radius: 0.25rem;
+}
+
+.mt-8 {
+  margin-top: 0.5rem;
+}
+
+.mlr-variable {
+  --margin: 1rem;
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+  transition: margin 200ms ease;
+}
+
+.pad-16 {
+  padding: 1rem;
+}
+
+.pad-18 {
+  padding: 1.125rem;
+}
+
+.unformatted-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-group {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 0.5rem);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
