@@ -41,7 +41,7 @@ Users should be able to:
 
 ### What I learned
 
-This was my first time building a page focusing on utility classes. It really helped the process of writing and applying CSS feel more organized and manageable. It was also my first time using Sass for a Frontend Mentor project, which also helped everything to feel a bit more tidy. I'm not sure, however, where utility classes are best used and if a page like this would be better suited to focusing on styling blocks. Because all the notifications use the same basic block, it felt odd giving each li a handful of utility classes instead of just calling them all `notif` and styling that directly. Like I said, the whole process of writing CSS in general felt a lot more controlable using utility classes, so I will definitely continue to use them where they are appropriate going forward.
+This was my first time building a page focusing on utility classes. It really helped the process of writing and applying CSS feel more organized and manageable. It was also my first time using Sass for a Frontend Mentor project, which also helped everything to feel a bit more tidy. I'm not sure, however, where utility classes are best used and if a page like this would be better suited to focusing on styling blocks. Because all the notifications use the same basic block, it felt odd giving each li a handful of utility classes instead of just calling them all `.notif` and styling that directly. Like I said, the whole process of writing CSS in general felt a lot more controlable using utility classes, so I will definitely continue to use them where they are appropriate going forward.
 
 ### Continued development
 
