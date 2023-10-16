@@ -1,4 +1,4 @@
-# Frontend Mentor - Notifications page solution
+# Notifications page
 
 ![](./assets/images/final.png)
 
